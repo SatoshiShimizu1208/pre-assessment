@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 class Board
 {
@@ -10,7 +11,7 @@ public:
         {
             for (int j = 1; j <= 12; j++)
             {
-                printf("%4d", i * j);
+                std::cout << std::setw(4) << i * j;
             }
             std::cout << std::endl;
         }
